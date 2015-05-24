@@ -22,6 +22,7 @@ This document is for the code in 'run_analysis.R'.
 * Finally we ddply the table to get the mean of each variable per activity and subject, into the DT 'tidy_data'
 
 The data at this point is in long format and appears like so:
+```
        SubjectID ActivityName             variable        mean
     1          1       LAYING    tBodyAcc-mean()-X  0.22159824
     2          1       LAYING    tBodyAcc-mean()-Y -0.04051395
@@ -33,6 +34,7 @@ The data at this point is in long format and appears like so:
     8          1       LAYING tGravityAcc-mean()-Y  0.70554977
     9          1       LAYING tGravityAcc-mean()-Z  0.44581772
     10         1       LAYING  tGravityAcc-std()-X -0.89683002
+```
 
 # Output
 We write the result to the file 'gacCourseProject.txt' in the local directory with row.name=FALSE
